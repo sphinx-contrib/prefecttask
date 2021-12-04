@@ -12,8 +12,7 @@ class TaskDocumenter(FunctionDocumenter):
 
     @classmethod
     def can_document_member(cls, member, membername, isattr, parent):
-        return isinstance(member, Task)
-
+        return isinstance(member, Task) and member.name == membername
 
 class TaskDirective(PyFunction):
     """Sphinx task directive."""
