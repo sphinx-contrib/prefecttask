@@ -15,7 +15,7 @@ if False:
     from typing import Any, Dict  # noqa
     from sphinx.application import Sphinx  # noqa
 
-__version__ = "0.1"
+__version__ = "0.2"
 
 def setup(app):
     """Setup Sphinx extension."""
